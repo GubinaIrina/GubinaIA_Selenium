@@ -48,7 +48,6 @@ public class Avito {
         driver.findElement(By.cssSelector("[data-marker='search-filters/submit-button']")).click();
         WebElement option = driver.findElement(By.cssSelector(".sort-select-3QxXG.select-select-box-3LBfK" +
                 ".select-size-s-2gvAy"));
-        option.click();
         Select moreExpensive = new Select(option.findElement(By.cssSelector(".select-select-3CHiM")));
         moreExpensive.selectByVisibleText("Дороже");
         findItem(driver, "[data-marker='catalog-serp']");
